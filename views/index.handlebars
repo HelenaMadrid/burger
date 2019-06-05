@@ -1,28 +1,40 @@
-<h1>EAT THE BURGER!</h1>
+<h1 class="text-center m-5">EAT THE BURGER!</h1>
 
 
 <div class="container">
     <div class="row">
         <div class="col">
-            <h2>Available burgers!</h2>
-            <ul>
+            <h2 class="m-2 text-center">Available burgers!</h2>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <h2 class="m-2 text-center">Devoured burgers!</h2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <!--<h2 class="m-4 text-center">Available burgers!</h2>-->
+            <ul class="m-4 scroll">
                 {{#each burgers}}
                 {{#unless devoured}}
-                <li>
-                    {{burger_name}}
-                    <button class="devour" data-id="{{id}}" data-devoured="{{devoured}}">
+                <li class="mt-4 ml-2">
+                    <div class="row">
+                    <div class="col-7">{{burger_name}}</div>
+                    <button class="devour col-4 text-center" data-id="{{id}}" data-devoured="{{devoured}}">
                         DEVOUR!!
                     </button>
+                    <div class="col-1"></div>
+                    </div>
                 </li>
-
                 {{/unless}}
                 {{/each}}
             </ul>
 
         </div>
         <div class="col">
-            <img src="assets/img/burger.jpg" class="img-fluid">
-            <h2>Add a burger!</h2>
+            <img src="assets/img/burgercombo.png" class="img-fluid mt-4 mb-4">
+            <h2 class="m-4 text-center">Add a burger!</h2>
             <form class="create-form">
                 <label for="burgerAdd">BURGER NAME:</label>
                 <input type="text" id="burgerAdd" name="name">
@@ -30,12 +42,14 @@
             </form>
         </div>
         <div class="col">
-            <h2>Devoured burgers!</h2>
-            <ul>
+            <!--<h2 class="m-4 text-center">Devoured burgers!</h2>-->
+            <ul class="m-4 scroll">
                 {{#each burgers}}
                 {{#if devoured}}
-                <li>
-                    {{burger_name}}
+                <li class="mt-4 ml-2">
+                    <div class="row">
+                    <div class="col-7">{{burger_name}}</div>
+                    <div class="col-5"></div>
                 </li>
                 {{/if}}
                 {{/each}}

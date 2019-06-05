@@ -1,0 +1,15 @@
+html, .body{
+    background-color: orange;
+}
+.scroll {
+    background-color: lightblue;
+    width: auto;
+    height: 300px;
+    overflow: scroll;
+}
+ul{
+    list-style-image: url("../img/burger2min.png");
+}
+li{
+    size: 18px;
+}

@@ -22,7 +22,7 @@ https://desolate-mesa-51130.herokuapp.com
 
 ## Working proof
 
-![alt text](http://url/to/img.png)
+![alt text](https://drive.google.com/file/d/1x-5G_2rkhAFt3Fw4mZ1H9uNx88QA_afD/view?usp=sharing)
 
 ## Authors
 

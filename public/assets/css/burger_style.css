@@ -1,15 +1,41 @@
+@import "compass/css3";
+@import "compass/css3/transform";
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
 html, .body{
-    background-color: orange;
+    background-color: #ED6565; 
 }
 .scroll {
     background-color: lightblue;
     width: auto;
-    height: 300px;
+    height: 390px;
     overflow: scroll;
+    border: 2px solid salmon;
 }
 ul{
     list-style-image: url("../img/burger2min.png");
 }
 li{
     size: 18px;
+}
+
+.wrap {
+  padding: 5em 0.5em;
+  margin: 0 auto;
+}
+
+h1,h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8em;
+  white-space: nowrap;
+  font-size: 12vw;
+  z-index: 1000;
+  font-family: 'Bangers';
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+}
+.burgername{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

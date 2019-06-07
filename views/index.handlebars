@@ -1,6 +1,7 @@
-<h1 class="text-center m-5">EAT THE BURGER!</h1>
-
-
+<audio id="audio">
+    <source src="assets/sounds/Mmm-yummy.mp3" type="audio/mpeg">
+</audio>
+<h1 class="text-center m-5 .wrap display-1">EAT THE BURGER!</h1>
 <div class="container">
     <div class="row">
         <div class="col">
@@ -20,11 +21,10 @@
                 {{#unless devoured}}
                 <li class="mt-4 ml-2">
                     <div class="row">
-                    <div class="col-7">{{burger_name}}</div>
-                    <button class="devour col-4 text-center" data-id="{{id}}" data-devoured="{{devoured}}">
-                        DEVOUR!!
-                    </button>
-                    <div class="col-1"></div>
+                        <div class="col-7 burgername">{{burger_name}}</div>
+                        <button class="devour col-4 text-center btn btn-dark" data-id="{{id}}" data-devoured="{{devoured}}">DEVOUR!
+                        </button>
+                        <div class="col-1"></div>
                     </div>
                 </li>
                 {{/unless}}
@@ -35,10 +35,10 @@
         <div class="col">
             <img src="assets/img/burgercombo.png" class="img-fluid mt-4 mb-4">
             <h2 class="m-4 text-center">Add a burger!</h2>
-            <form class="create-form">
-                <label for="burgerAdd">BURGER NAME:</label>
+            <form class="create-form text-center">
+                <label for="burgerAdd" class="burgername">BURGER NAME:</label>
                 <input type="text" id="burgerAdd" name="name">
-                <button type="submit">Add Burger</button>
+                <button type="submit" class="m-2 btn btn-dark">Add Burger</button>
             </form>
         </div>
         <div class="col">
@@ -48,8 +48,8 @@
                 {{#if devoured}}
                 <li class="mt-4 ml-2">
                     <div class="row">
-                    <div class="col-7">{{burger_name}}</div>
-                    <div class="col-5"></div>
+                        <div class="col-7 burgername">{{burger_name}}</div>
+                        <div class="col-5"></div>
                 </li>
                 {{/if}}
                 {{/each}}
@@ -58,4 +58,24 @@
         </div>
     </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>

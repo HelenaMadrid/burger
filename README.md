@@ -23,7 +23,7 @@ https://desolate-mesa-51130.herokuapp.com
 ## Working proof
 
 ![alt text](/public/assets/img/Screen Shot 2019-06-07 at 12.58.56 PM.png)
-
+![alt text](https://github.com/HelenaMadrid/burger/blob/master/public/assets/img/Main.png "spotify-this-song bellyache")
 
 ## Authors
 

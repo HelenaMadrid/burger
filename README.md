@@ -22,7 +22,11 @@ https://desolate-mesa-51130.herokuapp.com
 
 ## Working proof
 
+**Whenever you add a burger it will be displayed on the left side awaiting to be devoured. Once devoured, the burger will be display on the right side.**
+
 ![alt text](https://github.com/HelenaMadrid/burger/blob/master/public/assets/img/Main.png "Main page")
+
+**If no burger name is written, then the users will receive a message error urging them to complete that field before adding.**
 
 ![alt text](https://github.com/HelenaMadrid/burger/blob/master/public/assets/img/warning.png "warning")
 
